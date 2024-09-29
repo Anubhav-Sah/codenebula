@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>CodeNebula</title>
+    <link rel="icon" href="images/team.png">
+</head>
+
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="images/Plogo.png" alt="">
+            </div>
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#performance">Performance</a>
+                <a href="#use-cases">Use Cases</a>
+                <a href="#documentation">Documentation</a>
+                <a href="#chartwork">Chart Work</a>
+                <a href="#creators">About Chart</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="home">
+        <div class="content">
+            <h1><span>Project Loom</span></h1>
+            <p>Project Loom is a groundbreaking initiative aimed at enhancing Java’s concurrency model by introducing
+                virtual threads—lightweight, user-mode threads managed by the JVM. The primary goal is to simplify the
+                development of concurrent applications, allowing developers to write synchronous code while achieving
+                the scalability typically associated with asynchronous, non-blocking models.</p>
+            <button onclick="window.open('https://www.baeldung.com/openjdk-project-loom', '_blank');">LEARN MORE</button>
+            
+        </div>
+    </section>
+    <section id="features">
+        <div class="content">
+        <h1><span>Features</span></h1>
+        <p><strong><h2><span>Benefits of Project Loom:</span></h2></strong>
+                <br><br>
+                <b>&emsp;&emsp;&emsp;&emsp;&emsp;&#8226;Virtual Threads</b>: Lightweight and scalable, allowing millions of concurrent tasks with simplified code.
+             <br>
+            <b>&emsp;&emsp;&emsp;&emsp;&emsp;&#8226;Scalability</b>: Increased throughput and resource efficiency for handling high-load scenarios.<br>
+            <b>&emsp;&emsp;&emsp;&emsp;&emsp;&#8226;Improved Responsiveness</b>: Non-blocking I/O enhances application responsiveness.<br>
+            <b>&emsp;&emsp;&emsp;&emsp;&emsp;&#8226;Error Management</b>: Easier handling of blocking operations.<br>
+         <b>&emsp;&emsp;&emsp;&emsp;&emsp;&#8226;Compatibility</b>: Integrates seamlessly with existing Java APIs.<br>
+         <b>&emsp;&emsp;&emsp;&emsp;&emsp;&#8226;Simplified Testing</b>: Makes testing and debugging easier, modernizing concurrency in Java applications.</p>
+        </div>
+    </section>
+
+
+
+
+    <section id="performance">
+        <div class="content">
+        <h1><span>Performance</span></h1>
+        <p>Project Loom introduces lightweight fibers that enable a higher number of concurrent tasks compared to traditional threads, which are limited by system resources. Benchmarks reveal that fibers can be created and managed with significantly less overhead, resulting in improved performance and reduced memory usage. Traditional threads often suffer from context-switching delays, while fibers allow for more efficient, non-blocking I/O operations, enhancing scalability for applications with high concurrency requirements. This makes Loom a compelling choice for modern, resource-intensive applications.</p>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="use-cases">
+        <div class="content">
+        <h1><span>Use Cases</span></h1>
+        <p>
+            <br><br>
+            <b>&emsp;&emsp;&emsp;&emsp;&emsp;&#8226;Web Servers</b>:Enhance handling of simultaneous requests, improving response times and resource utilization.
+         <br>
+        <b>&emsp;&emsp;&emsp;&emsp;&emsp;&#8226;Real-Time Systems</b>: Manage concurrent tasks, such as sensor data processing, ensuring timely execution and responsiveness.<br>
+        <b>&emsp;&emsp;&emsp;&emsp;&emsp;&#8226;Scalability</b>: Enable high-performance applications in environments with significant concurrency demands.<br>
+        <b>&emsp;&emsp;&emsp;&emsp;&emsp;&#8226;Asynchronous Operations</b>: Simplify coding for asynchronous tasks while maintaining a familiar blocking style.<br>
+     </p>
+    </div>
+    </section>
+
+
+
+
+
+    <section id="documentation">
+        <div class="content">
+        <h1><span>Documentation</span></h1>
+        <p>Learn more about Project Loom by reading the official documentation available on the OpenJDK Wiki.</p>
+        <button onclick="window.open('https://wiki.openjdk.org/display/loom', '_blank');">OpenJDK Wiki</button>
+    </div>
+    </section>
+    <section id="chartwork">
+        <div class="content"><h1><span>Chart Work</span></h1><p style="text-align: center;"><img src="/images/chart.jpg" alt="chart_picture" height="450px"></p></div>
+        <br>
+    </section>
+
+
+
+
+
+    <section id="creators">
+        <div class="content">
+            <h1><span>About Chart</span></h1>
+            <p><strong>Chart Work Submitted to Dr. Gururaj Mukarambi</strong><br>
+            Assistant Professor, Dept. of Computer Science</p>
+            <p><strong>Chart Work Submitted by:</strong><br>
+            Team CodeNebula<br>
+            Team Members: Subhasree Sahu and Anubhav K. Sah</p>
+        </div>
+    </section>
+    
+    <br><br><br>
+    <br><br><br><br>
+    <footer>
+        <div class="footer-content">
+            <p>	&#169; Created by Team CodeNebula</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            delay: 100
+        });
+    </script>
+</body>
+
+</html>

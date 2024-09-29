@@ -1,0 +1,191 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Lemon&family=Patua+One&family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto; /* Allow height to expand with content */
+    overflow-y: auto;
+}
+
+/* For Sticky Navigation */
+nav {
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    background-color: white; /* To ensure it's visible over any content */
+    z-index: 100; /* Ensure it stays above other elements */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow for distinction */
+}
+
+nav .wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between; /* Adjusted to space between for better alignment */
+    align-items: center; /* Center the logo and links vertically */
+}
+
+nav .wrapper .logo img {
+    width: 100px; /* Set a fixed width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 20px;
+    margin-top: 50px; /* Add some margin for better spacing */
+}
+
+nav .wrapper .links {
+    margin-right: 20px; /* Add some margin for better spacing */
+    display: flex;
+    align-items: center;
+}
+
+nav .wrapper .links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 25px;
+    position: relative;
+    font-size: 1.4rem;
+}
+
+nav .wrapper .links a::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 4px;
+    background-color: #006dac;
+    width: 0%;
+    transition: 0.3s ease;
+}
+
+nav .wrapper .links a:hover::before {
+    width: 100%;
+}
+
+nav .wrapper .links a:hover {
+    color: #005180;
+    transition: 0.3s ease;
+}
+
+/* For smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section styling */
+section {
+    width: 100%;
+    height: 100vh; /* Set each section to full viewport height */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Allow column layout for content */
+}
+
+/* Different background colors for each section */
+#home {
+    background-color: #f9f9f9; /* Light gray */
+    background-image: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+}
+
+#features {
+    background-color: #e6f7ff; /* Light blue */
+    background-image: linear-gradient(to bottom, #e6f7ff, #cceeff);
+}
+
+#performance {
+    background-color: #f0e6ff; /* Light purple */
+    background-image: linear-gradient(to bottom, #f0e6ff, #d5c3ff);
+}
+
+#use-cases {
+    background-color: #e6ffe6; /* Light green */
+    background-image: linear-gradient(to bottom, #e6ffe6, #c3ffcc);
+}
+
+#documentation {
+    background-color: #fff4e6; /* Light orange */
+    background-image: linear-gradient(to bottom, #fff4e6, #ffe6cc);
+}
+
+#chartwork {
+    background-color: #e6e6ff; /* Light lavender */
+    background-image: linear-gradient(to bottom, #e6e6ff, #d1d1ff);
+}
+
+#creators {
+    background-color: #f9f9f9; /* Light gray */
+    background-image: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+}
+
+/* Section header styles */
+section .content {
+    text-align: center; /* Center text content */
+}
+
+section .content h1 {
+    font-size: 4.5rem;
+    margin: 0; /* Remove margin for better vertical alignment */
+}
+
+section .content h1 span {
+    color: #006dac;
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+section .content h2 span {
+    color: #1998e2;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+section .content p {
+    font-size: 1.2rem;
+    margin: 1rem 0; /* Remove side margins for center alignment */
+}
+
+section .content button {
+    font-size: 1.2rem;
+    width: 200px;
+    height: 50px;
+    background: #006dac;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    margin-top: 1.5rem; /* Add margin for better spacing */
+    transition: 0.3s linear;
+}
+
+section .content button:hover {
+    color: #006dac;
+    background-color: transparent;
+    border: none;
+    box-shadow: 3px 3px black;
+    border-right: 2px solid #006dac;
+    border-bottom: 2px solid #006dac;
+}
+
+/* Footer styles */
+footer {
+    width: 100%;
+    background-color: #006dac; /* Background color of the footer */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 15px 0; /* Padding for top and bottom */
+    position: relative; /* Position relative to other elements */
+    bottom: 0; /* Stick to the bottom */
+}
+
+.footer-content p {
+    margin: 0; /* Remove default margin */
+    font-size: 1rem; /* Font size for the text */
+}
